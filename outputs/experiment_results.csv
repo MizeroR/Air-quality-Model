@@ -1,0 +1,18 @@
+experiment_id,description,model_name,optimizer,learning_rate,batch_size,epochs_trained,train_rmse,val_rmse,overfitting_ratio
+13,"CNN-LSTM hybrid, 64 filters, kernel=3",cnn_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8b7f99ce30>,9e-05,32,11,0.38,0.58,1.511
+14,"CNN-LSTM, 32 filters, kernel=5, lr=0.0015",cnn_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8b7f99deb0>,0.000135,64,12,0.41,0.58,1.407
+3,"Simple LSTM, MAE loss, lr=0.0005, batch=16",simple_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8c7722d730>,4.5e-05,16,8,0.44,0.59,1.339
+8,"Bidirectional LSTM, Huber loss, lr=0.003",bidirectional_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8b7cc74080>,0.00027,64,13,0.34,0.6,1.784
+11,"GRU model [128,64], lr=0.0005, dropout=0.3",gru_model,<keras.src.optimizers.adam.Adam object at 0x7f8b7f99c980>,4.5e-05,64,12,0.35,0.6,1.709
+15,"CNN-LSTM, 128 filters, RMSprop, batch=16",cnn_lstm,<keras.src.optimizers.rmsprop.RMSprop object at 0x7f8b7f99c170>,9e-05,16,11,0.35,0.61,1.767
+1,"Baseline Simple LSTM, lr=0.001, batch=32",simple_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8b7d4dc8f0>,9e-05,32,8,0.53,0.62,1.169
+10,"GRU model [64,32], baseline configuration",gru_model,<keras.src.optimizers.adam.Adam object at 0x7f8c77eff9b0>,2.7e-05,32,13,0.3,0.62,2.029
+6,"Deep LSTM [32,16], RMSprop, lr=0.002, batch=128",deep_lstm,<keras.src.optimizers.rmsprop.RMSprop object at 0x7f8b7cc755e0>,5.4e-05,128,31,0.42,0.64,1.54
+16,"Deep LSTM [96,48], RMSE loss, lr=0.0012",deep_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8b7f99d220>,0.000108,48,37,0.56,0.69,1.229
+18,"Large Simple LSTM, 256 units, high dropout",simple_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8c49e4ec90>,2.7e-05,8,20,0.59,0.74,1.25
+4,"Deep LSTM [64,32], lr=0.001, dropout=0.2",deep_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8c7720b350>,2.7e-05,32,16,0.81,0.91,1.126
+7,"Bidirectional LSTM, 64 units, lr=0.001",bidirectional_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8b7e6975c0>,9e-05,32,9,1.26,0.95,0.751
+5,"Deep LSTM [128,64,32], lr=0.0008, dropout=0.3",deep_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8b7cc74470>,7.2e-05,64,10,0.95,1.06,1.115
+17,"Attention LSTM, 64 units, baseline config",attention_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8b7f99d880>,9e-05,32,7,4.26,3.14,0.738
+2,"Simple LSTM, larger units, lr=0.005, batch=64",simple_lstm,<keras.src.optimizers.adam.Adam object at 0x7f8b7f96ecf0>,0.00045,64,50,3.4,3.52,1.035
+9,"Bidirectional LSTM, SGD optimizer, lr=0.01",bidirectional_lstm,<keras.src.optimizers.sgd.SGD object at 0x7f8b7f99ef90>,0.0009,16,7,,,
